@@ -14,12 +14,12 @@ Read the instructions on the page.  It will give all the directions.  Once you s
 
 When you guess a number, the button will change colors depending on how far away you are.  The colors are on the rainbow scale.  Here's how it goes:
 
--Red: You're really far away...
--Orange: You're still far away..
--Yellow: You're getting close.
--Green: You're close.
--Blue: You're really close!
--Purple: You got it right!!
+- Red: You're really far away...
+- Orange: You're still far away..
+- Yellow: You're getting close.
+- Green: You're close.
+- Blue: You're really close!
+- Purple: You got it right!!
 
 TIP:  Once you set a maximum limit, the random number you're trying to guess will be displayed in the console.  If you want to cut to the chase, open the console by pressing "Ctrl +Shift +J (on Windows) or "Cmd + Option +J" (on a Mac)."
 
