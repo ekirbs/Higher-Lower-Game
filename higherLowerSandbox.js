@@ -84,4 +84,24 @@ function btnColorChange() {
         }
 }
 
+make image
+set initial image position
+change image position each time a result is set
+    along the rainbow for valid guesses, somewhere else for invalid guesses.
+    different pictures on rotation, and a unique one for invalid guesses.
+
+
+<img id="mario1" src="./assets/marioBase.jpg" alt="Mario running 1." />
+
+    mario1 {
+    display: block;
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    mario1.style.height: 50px;
+    mario1.style.width: 60px;
+
 */

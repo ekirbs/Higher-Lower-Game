@@ -17,7 +17,7 @@ function do_maxChoice () {
             randomNum = Number(Math.floor(Math.random() * roundedMaxChoice) + 1);
         }
         console.log(randomNum);
-        container2.classList.remove("hide");      
+        container2.classList.remove("hide");   
     }
     message1.innerHTML = `Now, guess a number between 1 and ${roundedMaxChoice}.  After you enter your guess, press the Guess button, or press Enter, and see if you got it right!`;
 }
