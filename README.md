@@ -14,12 +14,12 @@ Read the instructions on the page.  It will give all the directions.  Once you s
 
 When you guess a number, the button will change colors depending on how far away you are.  The colors are on the rainbow scale.  Here's how it goes:
 
-Purple: You're really far away...
-Red: You're far away..
-Orange:You're getting close.
-Yellow:You're close.
-Green: You're really close!
-Blue: You got it right!!
+Red: You're really far away...
+Orange: You're still far away..
+Yellow: You're getting close.
+Green: You're close.
+Blue: You're really close!
+Purple: You got it right!!
 
 TIP:  Once you set a maximum limit, the random number you're trying to guess will be displayed in the console.  If you want to cut to the chase, open the console by pressing "Ctrl +Shift +J (on Windows) or "Cmd + Option +J" (on a Mac)."
 
@@ -30,11 +30,7 @@ Fireworks Effect - (c)2004-14 mf2fm web-design*
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
+Please refer to the license in the repo.
 
 ## Badges
 
