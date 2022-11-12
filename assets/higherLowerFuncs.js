@@ -58,11 +58,13 @@ function do_guess() {
             message2.innerHTML = `<b>You got it!</b><br>It only took you ${guessArray.length} guess!<br>Your guess was: ${guess}.`;
             btnColorChange();
             light_blue_touchpaper();
+            audio.play();
         } 
         else {
             message2.innerHTML = `<b>You got it!</b><br>It took you ${guessArray.length} guesses.<br>Your guesses were: ${guessArray.join(", ")}.`;
             btnColorChange();
             light_blue_touchpaper();
+            audio.play();
         }
     }    
 }

@@ -12,6 +12,8 @@ let myBtn1 = document.getElementById('myBtn1');
         myBtn1.style.color = 'white';
     });
 
+    let audio = new Audio("./assets/stageWinSound.mp3");
+
 /* v8-Changelog:
 
     JS Line 13-18: Added eventListener to change button color to salmon on click.
