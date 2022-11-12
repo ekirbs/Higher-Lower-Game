@@ -85,26 +85,32 @@ function btnColorChange() {
         if (btnColor > percent1 && guess < randomNum  && guess >= 1) {
             myBtn2.style.backgroundColor = 'red';
             myBtn2.style.color = 'white';
+            mario1.style.right = '600px';
         }
         else if (btnColor > percent2 && btnColor < percent1) {
             myBtn2.style.backgroundColor = 'orange';
             myBtn2.style.color = 'white';
+            mario1.style.right = '400px';
         }
         else if (btnColor > percent3 && btnColor < percent2) {
             myBtn2.style.backgroundColor = 'yellow';
             myBtn2.style.color = 'blue';
+            mario1.style.right = '200px';
         }
         else if (btnColor > percent4 && btnColor < percent3) {
             myBtn2.style.backgroundColor = 'green';
             myBtn2.style.color = 'white';
+            mario1.style.right = '1px';
         }
         else if (btnColor !== 0 && btnColor < percent4) {
             myBtn2.style.backgroundColor = 'blue';
             myBtn2.style.color = 'white';
+            mario1.style.right = '-200px';
         }
         else if (btnColor == 0) {
             myBtn2.style.backgroundColor = 'purple';
             myBtn2.style.color = 'white';
+            mario1.style.right = '-400px';
         }
         else {
         }
