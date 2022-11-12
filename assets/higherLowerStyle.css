@@ -67,3 +67,14 @@ h1 {
     bottom: 300px;
     left: 650px;
 }
+
+.marioCheering {
+    display: block;
+    height: 200px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    position: relative;
+    bottom: 500px;
+}

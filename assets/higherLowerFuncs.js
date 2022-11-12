@@ -59,12 +59,16 @@ function do_guess() {
             btnColorChange();
             light_blue_touchpaper();
             audio.play();
+            victoryCheer.classList.remove("hide");
+            marioRunning.classList.add("hide");
         } 
         else {
             message2.innerHTML = `<b>You got it!</b><br>It took you ${guessArray.length} guesses.<br>Your guesses were: ${guessArray.join(", ")}.`;
             btnColorChange();
             light_blue_touchpaper();
             audio.play();
+            victoryCheer.classList.remove("hide");
+            marioRunning.classList.add("hide");
         }
     }    
 }
