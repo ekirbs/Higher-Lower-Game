@@ -1,5 +1,5 @@
 body {
-    background-image: url("skyImage.jpg");
+    background-image: url("blackSpace.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-color: #cccccc;
@@ -14,14 +14,16 @@ body {
 footer {
     bottom: 5px;
     font-family: Papyrus, "Lucida Console", Helvetica, Arial, sans-serif;
+    color: white;
 }
 
 h1 {
-    text-shadow: 2px 2px 4px gray;
+    text-shadow: 2px 2px 4px rgb(168, 167, 167);
 }
 
 .main {
     flex-grow: 1;
+    color: white;
 }
 
 .container {
@@ -33,4 +35,35 @@ h1 {
 
 .hide {
     display: none;
+}
+
+.mario1 {
+    display: block;
+    height: 100px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    right: 600px;
+}
+
+.rainbow {
+    display: block;
+    height: 100px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+}
+
+.starAnimated {
+    display: block;
+    height: 200px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    position: relative;
+    bottom: 300px;
+    left: 650px;
 }
