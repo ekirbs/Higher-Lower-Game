@@ -25,7 +25,6 @@ function do_maxChoice () {
 
 function do_guess() {
     let guess = Number(document.getElementById("guess").value);
-
     let message2 = document.getElementById("message2");
 
     if(isNaN(guess)) {
@@ -71,7 +70,6 @@ function do_guess() {
 
 function btnColorChange() {
     let guess = Number(document.getElementById("guess").value);
-
     let btnColor = Math.abs(Number(randomNum - guess));
 
     let percentToGet1 = 50;

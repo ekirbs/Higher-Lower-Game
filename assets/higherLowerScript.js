@@ -12,7 +12,7 @@ let myBtn1 = document.getElementById('myBtn1');
         myBtn1.style.color = 'white';
     });
 
-    let audio = new Audio("./assets/stageWinSound.mp3");
+let audio = new Audio("./assets/stageWinSound.mp3");
 
 /* v8-Changelog:
 
