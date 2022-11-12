@@ -45,32 +45,28 @@ function do_guess() {
     }
     else {
         guessArray.push(guess);
+        btnColorChange();
         
         if(guess < randomNum) {
             message2.innerHTML = "No, try a higher number.";
-            btnColorChange();
         }
         else if(guess > randomNum) {
             message2.innerHTML = "No, try a lower number.";
-            btnColorChange();
         }
-        else if(guess == randomNum && guessArray.length == 1) {
-            message2.innerHTML = `<b>You got it!</b><br>It only took you ${guessArray.length} guess!<br>Your guess was: ${guess}.`;
-            btnColorChange();
-            light_blue_touchpaper();
-            audio.play();
-            victoryCheer.classList.remove("hide");
-            marioRunning.classList.add("hide");
-        } 
         else {
-            message2.innerHTML = `<b>You got it!</b><br>It took you ${guessArray.length} guesses.<br>Your guesses were: ${guessArray.join(", ")}.`;
-            btnColorChange();
             light_blue_touchpaper();
             audio.play();
             victoryCheer.classList.remove("hide");
             marioRunning.classList.add("hide");
+
+            if(guess == randomNum && guessArray.length == 1) {
+                message2.innerHTML = `<b>You got it!</b><br>It only took you ${guessArray.length} guess!<br>Your guess was: ${guess}.`;
+            } 
+            else {
+                message2.innerHTML = `<b>You got it!</b><br>It took you ${guessArray.length} guesses.<br>Your guesses were: ${guessArray.join(", ")}.`;
+            }
         }
-    }    
+    }  
 }
 
 function btnColorChange() {
