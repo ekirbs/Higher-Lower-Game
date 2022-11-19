@@ -19,7 +19,7 @@
 
     <main>
         <div class="container" id="container1">
-            <h1><span style="color: green;">Higher</span>-<span style="color: red;">Lower</span> Game</h1>
+            <h1><span class="title-higher">Higher</span>-<span class="title-lower">Lower</span> Game</h1>
             <h3>Let's play a game!</h3>
             <p>We will generate a random positive whole number, and your job is to try and guess that number.</p>
             <P>First, you must set the upper limit of the random number.  It has to be a positive number.  If you chose a non-whole number, I will round it.  Press the 'Enter Maximum' button to enter the maximum.</P>
@@ -37,24 +37,24 @@
                         <button type="button" id ="myBtn2" class="btn btn-primary" onclick="do_guess()">Guess</button>
                     </form>
             <p id="message2"></p>
-            <audio src="./assets/stageWinSound.mp3" id="stageWinSound"></audio>
+            <audio src="./assets/media/stageWinSound.mp3" id="stageWinSound"></audio>
        </div>
        <div class="marioRunning" id="marioRunning">
-        <img class="mario1" id="mario1" src="./assets/marioBase.jpg" alt="Mario running 1." />
+        <img class="mario1" id="mario1" src="./assets/media/marioBase.jpg" alt="Mario running 1." />
        </div>
-       <img class="rainbow" id="rainbow" src="./assets/rainbow.jpg" alt="Rainbow Road." />
+       <img class="rainbow" id="rainbow" src="./assets/media/rainbow.jpg" alt="Rainbow Road." />
        <div class="rotatingStar" id="rotatingStar">
-        <img class="starAnimated" id="starAnimated" src="./assets/starAnimated.gif" alt="Mario star animated gif." />
+        <img class="starAnimated" id="starAnimated" src="./assets/media/starAnimated.gif" alt="Mario star animated gif." />
        </div>
        <div class="victoryCheer hide" id="victoryCheer">
-        <img class="marioCheering" id="marioCheering" src="./assets/marioCheering.gif" alt="Mario cheering the win." />
+        <img class="marioCheering" id="marioCheering" src="./assets/media/marioCheering.gif" alt="Mario cheering the win." />
        </div>
     </main>
 
     </div>
 
     <footer>
-        Made by Ekirbs
+        Made by <span class="sig-E">E</span><span class="sig-K">K</span>irbs
     </footer>
 
     <script src="assets/javascript/fireworks.js"></script>
