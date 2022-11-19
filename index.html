@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", shrink-to-fit="no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <title>Higher-Lower Game</title>
+
+</head>
+<body>
+
+    <div class="main">
+
+    <header></header>
+
+    <main>
+        <div class="container" id="container1">
+            <h1><span style="color: green;">Higher</span>-<span style="color: red;">Lower</span> Game</h1>
+            <h3>Let's play a game!</h3>
+            <p>We will generate a random positive whole number, and your job is to try and guess that number.</p>
+            <P>First, you must set the upper limit of the random number.  It has to be a positive number.  If you chose a non-whole number, I will round it.  Press the 'Enter Maximum' button to enter the maximum.</P>
+            <button type="button" id="myBtn1" class="btn btn-primary" onclick="do_maxChoice()">Enter Maximum</button>
+        </div>
+    
+       <div class="container hide" id="container2">
+            <h3>Now guess!</h3>
+            <p id="message1"></p>
+                    <form>
+                        <div class="form-group">
+                            <label>Your Guess:</label>
+                            <input type="text" id="guess" class="form-control" placeholder="Enter your guess here">
+                        </div>
+                        <button type="button" id ="myBtn2" class="btn btn-primary" onclick="do_guess()">Guess</button>
+                    </form>
+            <p id="message2"></p>
+            <audio src="./assets/stageWinSound.mp3" id="stageWinSound"></audio>
+       </div>
+       <div class="marioRunning" id="marioRunning">
+        <img class="mario1" id="mario1" src="./assets/marioBase.jpg" alt="Mario running 1." />
+       </div>
+       <img class="rainbow" id="rainbow" src="./assets/rainbow.jpg" alt="Rainbow Road." />
+       <div class="rotatingStar" id="rotatingStar">
+        <img class="starAnimated" id="starAnimated" src="./assets/starAnimated.gif" alt="Mario star animated gif." />
+       </div>
+       <div class="victoryCheer hide" id="victoryCheer">
+        <img class="marioCheering" id="marioCheering" src="./assets/marioCheering.gif" alt="Mario cheering the win." />
+       </div>
+    </main>
+
+    </div>
+
+    <footer>
+        Made by Ekirbs
+    </footer>
+
+    <script src="assets/javascript/fireworks.js"></script>
+    <script src="assets/javascript/funcs.js"></script>
+    <script src="assets/javascript/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
