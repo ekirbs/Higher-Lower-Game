@@ -31,16 +31,20 @@ function do_guess() {
         message2.innerHTML = "You need to choose a <i>number</i>!  <b>Please try again.</b>";
         myBtn2.style.backgroundColor = 'gray';
         myBtn2.style.color = 'white';
+        /* add marioConfused */
     }
     else if(guess < 1 || guess > roundedMaxChoice) {
         message2.innerHTML = "You have to choose a number <i>in the range you selected</i>!  <b>Please try again.</b>";
         myBtn2.style.backgroundColor = 'gray';
         myBtn2.style.color = 'white';
+        /* add marioConfused */
+
     }
     else if(guessArray.includes(guess)) {
             message2.innerHTML = "You guessed that number already!  <b>Please try again.</b>";
             myBtn2.style.backgroundColor = 'gray';
             myBtn2.style.color = 'white';
+            /* add MarioConfused */
     }
     else {
         guessArray.push(guess);
@@ -86,33 +90,72 @@ function btnColorChange() {
             myBtn2.style.backgroundColor = 'red';
             myBtn2.style.color = 'white';
             mario1.style.right = '600px';
+            /* call function of mario running to position */
         }
         else if (btnColor > percent2 && btnColor < percent1) {
             myBtn2.style.backgroundColor = 'orange';
             myBtn2.style.color = 'white';
             mario1.style.right = '400px';
+            /* call function of mario running to position */
         }
         else if (btnColor > percent3 && btnColor < percent2) {
             myBtn2.style.backgroundColor = 'yellow';
             myBtn2.style.color = 'blue';
             mario1.style.right = '200px';
+            /* call function of mario running to position */
         }
         else if (btnColor > percent4 && btnColor < percent3) {
             myBtn2.style.backgroundColor = 'green';
             myBtn2.style.color = 'white';
             mario1.style.right = '1px';
+            /* call function of mario running to position */
         }
         else if (btnColor !== 0 && btnColor < percent4) {
             myBtn2.style.backgroundColor = 'blue';
             myBtn2.style.color = 'white';
             mario1.style.right = '-200px';
+            /* call function of mario running to position */
         }
         else if (btnColor == 0) {
             myBtn2.style.backgroundColor = 'purple';
             myBtn2.style.color = 'white';
             mario1.style.right = '-400px';
+            /* call function of mario running to position */
         }
         else {
         }
 }
 //couldn't I use a loop array here somehow?
+
+/*
+
+function marioReactionToGuess() {
+    let guess = Number(document.getElementById("guess").value);
+    let absDifference = Math.abs(Number(randomNum - guess));
+    let pastAbsDifference = Math.abs(Number(randomNum - guessArray.indexOf[guessArray.length - 1]));   indexOF FORMATTING...IS THIS THE RIGHT FORMATION???
+
+ 
+if (absDifference < pastAbsDifference) {
+    marioRunning.classList.add("hide");
+    marioCheer.classList.remove("hide");
+
+    after a second, smoke-puff + mario-moving
+        if
+
+    } else if (absDifference > pastAbsDifference) {
+        marioRunning.classList.add("hide");
+        marioSad.classList.remove("hide");
+
+        after a second, smoke-puff + mario-moving
+        if 
+    } else {
+        marioThinking.gif
+    }
+}
+
+gif stops and running mario runs across the screen...some sort of smoke puff to change figures?
+
+
+if 
+
+*/

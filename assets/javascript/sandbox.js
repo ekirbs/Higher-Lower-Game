@@ -104,4 +104,39 @@ change image position each time a result is set
     mario1.style.height: 50px;
     mario1.style.width: 60px;
 
+
+
+
+    I want a function where, when the person guesses a number, mario shows whether it was good or bad then runs eithe rforward to a better spot, or turns around and runs backward to a worse spot
+
+
+
+    function marioResponse() {
+        if guess is worse than last guess, mario shrugs
+            call turn around function
+                call run function...marion runs to new spot
+         
+        else, mario cheers
+            if mario is turned the wrong way, mario turns around
+            call run function...mario runs to new spot
+
+    }
+
+    guessArray []
+
+    let absoluteDifference = Math.abs(Number(randomNum - guess))
+
+    function marioResponse() {
+        if (guess is less than last guess)
+            marioShrug
+        else if (guess is more than last guess)
+            marioCheer
+        else
+            marioScratchHead
+    }
+
+    function marioMove() {
+        if btnColor
+    }
+
 */
